@@ -30,7 +30,7 @@ function UseCase3(routeProps: RouteComponentProps) {
 
     return (
         <>
-            <h2>Use Case 3</h2>
+            <h2>Use Case 3 - Add sections as user progresses</h2>
             <Router>
                 <Route
                     exact={true}

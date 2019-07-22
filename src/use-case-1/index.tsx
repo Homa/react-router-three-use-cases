@@ -23,7 +23,7 @@ export interface match<P> {
 function UseCase1(routerProps: IProps) {
     return(
     <>
-        <h2>Use Case 1</h2>
+        <h2>Use Case 1 - Nested routers</h2>
         <Link to={`${routerProps.match.url}/page1`}>page 1</Link> /
         <Link to={`${routerProps.match.url}/page2`}>page 2</Link> /
         <Link to={`${routerProps.match.url}/page3`}>page 3</Link>

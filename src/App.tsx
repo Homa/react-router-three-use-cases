@@ -10,7 +10,7 @@ const App = () => {
       <h1>Three React Router Use Cases</h1>
       <Router>
         <ul>
-            <li><Link to="/usecase1">Use Case 1</Link></li>
+            <li><Link to="/usecase1">Use Case 1 - Nested routers</Link></li>
             <li><Link to="/usecase2">Use Case 2 - Multiple switch</Link></li>
             <li><Link to="/usecase3">Use Case 3 - Add sections as user progresses</Link></li>
         </ul>
