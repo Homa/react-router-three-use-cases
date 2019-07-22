@@ -31,38 +31,36 @@ function UseCase3(routeProps: RouteComponentProps) {
     return (
         <>
             <h2>Use Case 3 - Add sections as user progresses</h2>
-            <Router>
-                <Route
-                    exact={true}
-                    path="/usecase3"
-                    render={() => {
-                        return <Page1 />;
-                    }}/>
-                <Route
-                    exact={false}
-                    path="/usecase3/page1"
-                    render={() => {
-                        return <Page1 />;
-                    }}/>
-                <Route
-                    exact={false}
-                    path="/usecase3/page1/page2"
-                    render={() => {
-                        return <Page2 />;
-                    }}/>
-                <Route
-                    exact={false}
-                    path="/usecase3/page1/page2/page3"
-                    render={() => {
-                        return <Page3 />;
-                    }}/>
+            <Route
+                exact={true}
+                path="/usecase3"
+                render={() => {
+                    return <Page1 />;
+                }}/>
+            <Route
+                exact={false}
+                path="/usecase3/page1"
+                render={() => {
+                    return <Page1 />;
+                }}/>
+            <Route
+                exact={false}
+                path="/usecase3/page1/page2"
+                render={() => {
+                    return <Page2 />;
+                }}/>
+            <Route
+                exact={false}
+                path="/usecase3/page1/page2/page3"
+                render={() => {
+                    return <Page3 />;
+                }}/>
 
-                {next !== '' &&
-                    <Link
-                        to={`${routeProps.location.pathname}/${next}`}
-                        onClick={goNext}>Next</Link>
-                }
-            </Router>
+            {next !== '' &&
+                <Link
+                    to={`${routeProps.location.pathname}/${next}`}
+                    onClick={goNext}>Next</Link>
+            }
         </>
     );
 }

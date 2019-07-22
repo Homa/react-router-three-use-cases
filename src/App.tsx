@@ -18,7 +18,7 @@ const App = () => {
             <Route exact path="/" component={UseCase1} />
             <Route path="/usecase1" component={UseCase1} />
             <Route path="/usecase2" component={UseCase2} />
-            <Route path="/usecase3" component={UseCase3}/>
+            <Route path="/usecase3" component={UseCase3} />
         </header>
       </Router>
     </div>
