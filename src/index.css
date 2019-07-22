@@ -1,13 +1,83 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #f7f7f7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.active-line,
+.visited-line,
+.togo-line {
+    position: relative;
+    padding: 15px 15px 15px 65px;
+    margin: 20px 0px;
+}
+
+.active-line:before,
+.visited-line:before,
+.togo-line:before {
+    content: '';
+    position: absolute;
+    top: 36px;
+	bottom: -40px;
+    width: 2px;
+    left: 30px;
+    z-index: 2;
+}
+
+.active-line:after,
+.visited-line:after,
+.togo-line:after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.active-line {
+    background-color: #fff;
+}
+
+.active-line:before {
+	background: #417FAE;
+}
+
+.active-line:after {
+    border: #417FAE 2px solid;
+}
+
+.visited-line {
+    background-color: #e5e5e5;
+}
+
+.visited-line:before {
+	background: #759F3A;
+}
+
+.visited-line:after {
+    border: #759F3A 2px solid;
+    background-color: #759F3A;
+}
+
+.togo-line {
+    background-color: #fff;
+}
+
+.togo-line:before {
+	background: #C9CBC6;
+}
+
+.togo-line:after {
+    border: #C9CBC6 2px solid;
+}
+
+.container div:last-child:before {
+  width: 0px;
+}
+
+.component-structure {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }

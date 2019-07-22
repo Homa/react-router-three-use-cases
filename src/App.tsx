@@ -6,23 +6,22 @@ import UseCase3 from './use-case-3/index';
 
 const App = () => {
   return (
-    <>
+    <div  className="container">
       <h1>Three React Router Use Cases</h1>
       <Router>
-        <div className="App">
-          <ul>
-            <li><Link to="/UseCase1">Use Case 1</Link></li>
-            <li><Link to="/UseCase2">Use Case 2</Link></li>
-            <li><Link to="/UseCase3">Use Case 3</Link></li>
-          </ul>
-          <header className="App-header">
-            <Route exact path="/UseCase1" component={UseCase1} />
-            <Route path="/UseCase2" component={UseCase2} />
-            <Route path="/UseCase3" component={UseCase3} />
-          </header>
-        </div>
+        <ul>
+            <li><Link to="/usecase1">Use Case 1</Link></li>
+            <li><Link to="/usecase2">Use Case 2 - Multiple switch</Link></li>
+            <li><Link to="/usecase3">Use Case 3 - Add sections as user progresses</Link></li>
+        </ul>
+        <header className="App-header">
+            <Route exact path="/" component={UseCase1} />
+            <Route path="/usecase1" component={UseCase1} />
+            <Route path="/usecase2" component={UseCase2} />
+            <Route path="/usecase3" component={UseCase3}/>
+        </header>
       </Router>
-    </>
+    </div>
   );
 }
 
