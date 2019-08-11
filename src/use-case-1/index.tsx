@@ -27,17 +27,15 @@ function UseCase1(routerProps: IProps) {
         <Link to={`${routerProps.match.url}/page1`}>page 1</Link> /
         <Link to={`${routerProps.match.url}/page2`}>page 2</Link> /
         <Link to={`${routerProps.match.url}/page3`}>page 3</Link>
-        <Switch>
-            <Route
-                path={`${routerProps.match.url}/page1`}
-                component={Page1}/>
-            <Route
-                path={`${routerProps.match.url}/page2`}
-                component={Page2}/>
-            <Route
-                path={`${routerProps.match.url}/page3`}
-                component={Page3}/>
-        </Switch>
+        <Route
+            path={`${routerProps.match.url}/page1`}
+            component={Page1}/>
+        <Route
+            path={`${routerProps.match.url}/page2`}
+            component={Page2}/>
+        <Route
+            path={`${routerProps.match.url}/page3`}
+            component={Page3}/>
     </>);
 }
 
