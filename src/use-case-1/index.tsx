@@ -1,9 +1,8 @@
 import React from 'react';
-import { Switch, Route, RouteComponentProps, Link } from 'react-router-dom';
+import { Route, RouteComponentProps, Link } from 'react-router-dom';
 import Page1 from './page1';
 import Page2 from './page2';
 import Page3 from './page3';
-
 
 interface MatchParams {
     name: string;
@@ -12,11 +11,11 @@ interface MatchParams {
 interface IProps extends RouteComponentProps<MatchParams> {
 }
 
-export interface RouteComponentProps<P> {
-  match: match<P>;
+export interface RouteComponentProps {
+  match: match;
 }
 
-export interface match<P> {
+export interface match {
   url: string;
 }
 
